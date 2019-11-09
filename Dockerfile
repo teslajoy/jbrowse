@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:18.06
 
 RUN apt-get update && \
     apt-get -y install alien zip wget build-essential zlib1g-dev libpng-dev libxml2 libxml2-dev lsb-release && \
