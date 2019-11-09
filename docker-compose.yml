@@ -1,0 +1,21 @@
+version: '3'
+services:
+
+  nginx:
+    image: nginx:1.17.1-alpine
+    ports:
+      - "80:80"
+    volumes:
+      - jbrowse:/usr/share/nginx/html:ro
+
+  jbrowse:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./data:/data
+      - jbrowse:/jbrowse
+    command: ['/jbrowse/bin/prepare-refseqs.pl',  '--help']
+
+volumes:
+  jbrowse:
