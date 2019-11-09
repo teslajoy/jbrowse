@@ -1,8 +1,8 @@
 #### JBrowse Docker IMG
 
 1. `docker-compose up`
-2. for building track files `docker-compose run --rm jbrowse /jbrowse/bin/prepare-refseqs.pl --fasta /data/specie.fa`
-If track files exist, then `docker-compose up` would build and run the img.
+2. * for building track files `docker-compose run --rm jbrowse /jbrowse/bin/prepare-refseqs.pl --fasta /data/specie.fa` 
+   * If track files exist, then `docker-compose up` would build and run the img.
 3. type `localhost` or the `IP address` of host machine in your browser.   
 
 for docker-img R&D 
