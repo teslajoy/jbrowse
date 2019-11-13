@@ -7,7 +7,7 @@
 
 for docker-img R&D 
 
-1. `docker build -t jbrowse-docker:<version> .`
+1. `docker build -t jbrowse:<version> .`
 2. `docker run -v $(pwd)/data:/data -it jbrowse-docker:<version>`
 
 #### dependency issues - not documented in manual
