@@ -8,7 +8,7 @@
 for docker-img R&D 
 
 1. `docker build -t jbrowse:<version> .`
-2. `docker run -v $(pwd)/data:/data -it jbrowse-docker:<version>`
+2. `docker run -v $(pwd)/data:/data -it jbrowse:<version>`
 
 #### dependency issues - not documented in manual
 perl dependency: https://grantm.github.io/perl-libxml-by-example/installation.html 
